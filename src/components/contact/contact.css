@@ -6,12 +6,38 @@
     font-size: 30px;
     font-weight:800;
 }
-
+.contactleft>:nth-child(3){
+    color: var(--orange);
+}
 
 .mform{
     display: flex;
     flex-direction: column;
 }
-.cinput{
+.cinput, .ctextarea, .csubmit{
     margin-bottom: 2rem;
+    border-color: var(--orange);
+    border-radius: 5px;
+    outline: none;
+}.cinput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 3px; 
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.csubmit{
+    width: 4rem;
+    color: white;
+    border: none;
+    padding: 2px ;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--orange);
 }
