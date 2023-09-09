@@ -1,0 +1,35 @@
+.emodal{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+}
+.years{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: bold;
+    background: white;
+    margin-bottom: 1rem;
+}
+.emodal>span:nth-of-type(2){
+    color: var(--orange);
+
+}
+.years::before{
+border-radius: 100%;
+content: "";
+background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+top: -8px;
+left: -8px;
+bottom:-8px ;
+right: -8px;
+position: absolute;
+z-index: -1;
+box-shadow: var(--boxShadow);
+}

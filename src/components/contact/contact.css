@@ -1,0 +1,17 @@
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contactleft >span{
+    font-size: 30px;
+    font-weight:800;
+}
+
+
+.mform{
+    display: flex;
+    flex-direction: column;
+}
+.cinput{
+    margin-bottom: 2rem;
+}
