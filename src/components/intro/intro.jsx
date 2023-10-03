@@ -10,26 +10,39 @@ import thumbup from "../../img/thumbup.png"
 import crown from "../../img/crown.png"
 import glassesimoji from "../../img/glassesimoji.png"
 import FloatingDiv from "../foatingDiv/floatingDiv"
+import { themeContext } from "../../Context"
+import { useContext } from "react"
+import { motion } from "framer-motion"
+import { Link } from "react-scroll"
 
 function Intro() {
+  const theme = useContext(themeContext)
+  const darkMode = theme.state.darkMode
+  const transition = { duration: 2, type: "spring" }
+
   return (
     <div className="intro">
       <div className="ileft">
         <div className="iname">
-          <span>Hey ! I Am</span>
+          <span style={darkMode ? { color: "white" } : { color: "black" }}>
+            Hey ! I Am
+          </span>
           <span>Valeria Muhembele</span>
           <span>
             Backend Developer with intermediate experience in node js producing
             quality work. I also do frontend development with react js.
           </span>
         </div>
-        <button className="button ibutton">Hire Me</button>
+        <button className="button ibutton">
+          <Link spy={true} to="contact" smooth={true} activeClass="activeClass">
+            Hire Me
+          </Link>
+        </button>
         <div className="iicons">
-          {/* <a href="https://www.linkedin.com/in/valeria-muhembele-83726222a">
-            <img src={Linkedin} alt="Linkedin" />
-          </a> */}
           <img src={Github} alt="Github" />
-          <img src={Linkedin} alt="Linkedin" />
+          <a href="https://www.linkedin.com/in/valeria-muhembele-83726222a">
+            <img src={Linkedin} alt="Linkedin" />
+          </a>{" "}
           <img src={Instagram} alt="Instagram" />
         </div>
       </div>
@@ -37,13 +50,29 @@ function Intro() {
         <img src={vector1} alt="" />
         <img src={vector2} alt="" />
         <img src={boy} alt="" />
-        <img src={glassesimoji} alt="" />
-        <div style={{ top: "-4%", left: "68%" }}>
+        <motion.img
+          initial={{ left: "-36%" }}
+          whileInView={{ left: "-24%" }}
+          transition={transition}
+          src={glassesimoji}
+          alt=""
+        />
+        <motion.div
+          initial={{ top: "-4%", left: "74%" }}
+          whileInView={{ left: "68%" }}
+          transition={transition}
+          style={{ top: "-4%", left: "68%" }}
+        >
           <FloatingDiv image={crown} txt1="Web" txt2="Developer" />
-        </div>
-        <div style={{ top: "18rem", left: "0rem" }}>
+        </motion.div>
+        <motion.div
+          initial={{ left: "9rem", top: "18rem" }}
+          whileInView={{ left: "0rem" }}
+          transition={transition}
+          style={{ top: "18rem", left: "0rem" }}
+        >
           <FloatingDiv image={thumbup} txt1="Best Design" txt2="Award" />
-        </div>
+        </motion.div>
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
           className="blur"

@@ -1,4 +1,19 @@
 .experience{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.e-title{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.ex{
+    display: flex;
+}
+@media screen and (max-width:480px){
+    .experience{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
 }

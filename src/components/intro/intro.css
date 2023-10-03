@@ -47,10 +47,6 @@
     cursor: pointer;
 }
 
-
-
-
-
 .iright{
 display: flex;
 flex: 1;
@@ -91,4 +87,18 @@ border-radius: 50%;
     z-index: -9;
     top: -18%;
     left: 56%;
+}
+@media screen and (max-width:480px) {
+    .intro{
+        flex-direction: column;
+        margin-top: 2rem;
+        height: 112vh;
+
+    }
+    .iright{
+        transform: scale(.7);
+    }
+    .iicons{
+        margin-top: 0;
+    }
 }

@@ -33,3 +33,12 @@ position: absolute;
 z-index: -1;
 box-shadow: var(--boxShadow);
 }
+
+@media screen and (max-width:480px){
+    .years{
+        display: flex;
+    }
+    .emodal{
+        padding: 0 .5rem;
+    }
+}

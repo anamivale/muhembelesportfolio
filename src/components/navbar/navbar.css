@@ -1,5 +1,5 @@
 .nwrapper{
-    height: 10vh;display: flex;
+    display: flex;
     justify-content: space-between;
 }
 .nleft{
@@ -31,4 +31,13 @@ font-weight: 400;
     cursor: pointer;
     color: var(--orange);
 
+}
+@media screen and (max-width:480px) {
+    .nlist{
+        display: none;
+    }
+    .n-button{
+        display: none;
+    }
+    
 }

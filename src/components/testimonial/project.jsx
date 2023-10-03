@@ -1,5 +1,5 @@
 import React from "react"
-import "./projects.css"
+import "./testimonial.css"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import one from "../../img/Elias.jpg"
@@ -9,7 +9,7 @@ import four from "../../img/boy.png"
 import { Pagination } from "swiper/modules"
 import "swiper/css/pagination"
 
-const Project = () => {
+const Testimonial = () => {
   const swy = [
     {
       name: "puru lvyufh cc hvfhewful lluhwfvdb uhhwfv lvi ubhlbvfv",
@@ -29,7 +29,7 @@ const Project = () => {
     },
   ]
   return (
-    <div className="projects">
+    <div className="projects" id="testimonial">
       <Swiper
         className="swiper"
         modules={[Pagination]}
@@ -51,4 +51,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Testimonial

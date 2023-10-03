@@ -52,3 +52,38 @@ position: relative;
     top: 26rem;
     left: 12rem;
 }
+.card1{
+    left: 14rem;
+}
+.card2{
+    left: -4rem;
+    top: 12rem;
+}
+.card3{
+    top: 19rem;
+    left: 12rem;
+}
+@media screen and (max-width:480px){
+    .services{
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 0 .5rem;
+        height: 180vh;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card1{
+        left: 1rem;
+        top: -13rem;
+        margin-top: 1rem;
+    }
+    .card2{
+        left: 1rem;
+        top: 9rem;
+    }
+    .card3{
+        left: 1rem;
+        top: 30rem;
+    }
+}

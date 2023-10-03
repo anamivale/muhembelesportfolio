@@ -5,17 +5,21 @@ import glasses from "../../img/glasses.png"
 import humble from "../../img/humble.png"
 import Card from "../card/card"
 import resume from "./CV.pdf"
+import { themeContext } from "../../Context"
+import { useContext } from "react"
 function Services() {
+  const theme = useContext(themeContext)
+  const darkMode = theme.state.darkMode
   return (
-    <div className="services">
+    <div className="services" id="Services">
       <div className="awesome">
-        <span>My Awesome</span>
+        <span style={darkMode ? { color: "white" } : { color: "black" }}>
+          My Awesome
+        </span>
         <span>Services</span>
         <span>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-          nostrum voluptatum enim distinctio, corrupti maxime delectus magni
-          sapiente incidunt veritatis consequuntur modi in molestiae voluptate.
-          Cupiditate quos nemo fugiat exercitationem.
+          I develope web Applications. I deliver your work within the time limit
+          agreed . And also I am flexible.
         </span>
         <a href={resume} download>
           <button className="button sbutton">Download CV</button>
@@ -23,10 +27,10 @@ function Services() {
         <div className="blur s-blur" style={{ background: "#abf1ff94" }}></div>
       </div>
       <div className="cards">
-        <div style={{ left: "14rem" }}>
+        <div className="card1">
           <Card emoji={HeartEmoji} heading={"Design"} detail={"figma, Adobe"} />
         </div>
-        <div style={{ top: "12rem", left: "-4rem" }}>
+        <div className="card2">
           <Card
             emoji={glasses}
             heading={"Developer"}
@@ -41,7 +45,7 @@ function Services() {
           className="blur sblur3"
           style={{ background: "var(--purple)" }}
         ></div>
-        <div style={{ top: "19rem", left: "12rem" }}>
+        <div className="card3">
           <Card
             emoji={humble}
             heading={"Teacher"}

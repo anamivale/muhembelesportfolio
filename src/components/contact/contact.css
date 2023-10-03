@@ -1,6 +1,8 @@
 .contact{
     display: flex;
     justify-content: space-evenly;
+    height: 65vh;
+    margin-top: 2rem;
 }
 .contactleft >span{
     font-size: 30px;
@@ -40,4 +42,10 @@
     justify-content: center;
     align-items: center;
     background: var(--orange);
+}
+
+@media screen and (max-width:480px){
+    .contact{
+        flex-direction: column;
+    }
 }
