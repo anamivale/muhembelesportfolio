@@ -41,4 +41,8 @@ box-shadow: var(--boxShadow);
     .emodal{
         padding: 0 .5rem;
     }
+    .years>:nth-child(1){
+        font-size: 19px;
+
+    }
 }

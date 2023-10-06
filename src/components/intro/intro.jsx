@@ -28,7 +28,7 @@ function Intro() {
             Hey ! I Am
           </span>
           <span>Valeria Muhembele</span>
-          <span>
+          <span style={darkMode ? { color: "white" } : { color: "black" }}>
             Backend Developer with intermediate experience in node js producing
             quality work. I also do frontend development with react js.
           </span>
@@ -39,7 +39,11 @@ function Intro() {
           </Link>
         </button>
         <div className="iicons">
-          <img src={Github} alt="Github" />
+          <img
+            src={Github}
+            alt="Github"
+            style={darkMode ? { color: "white" } : { color: "black" }}
+          />
           <a href="https://www.linkedin.com/in/valeria-muhembele-83726222a">
             <img src={Linkedin} alt="Linkedin" />
           </a>{" "}

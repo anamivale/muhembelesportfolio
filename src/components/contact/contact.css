@@ -48,4 +48,8 @@
     .contact{
         flex-direction: column;
     }
+    .contactleft>:nth-child(1), .contactleft>:nth-child(3){
+        font-size: 19px;
+
+    }
 }

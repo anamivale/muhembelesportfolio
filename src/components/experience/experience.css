@@ -15,5 +15,13 @@
     .experience{
         flex-direction: column;
         margin-bottom: 2rem;
+        
+    }
+    .e-title{
+        font-size: 19px;
+    }
+    .ex{
+        font-size: 19px;
+
     }
 }

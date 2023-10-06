@@ -66,24 +66,32 @@ position: relative;
 @media screen and (max-width:480px){
     .services{
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: 0;
         padding: 0 .5rem;
-        height: 180vh;
+        height: 130vh;
     }
     .cards{
-        flex-direction: column;
+        display: block;;
+        margin: 0;
     }
     .card1{
         left: 1rem;
-        top: -13rem;
+        top: -16rem;
         margin-top: 1rem;
     }
     .card2{
         left: 1rem;
-        top: 9rem;
+        top: 3rem;
     }
     .card3{
         left: 1rem;
-        top: 30rem;
+        top: 20rem;
+    }
+    .awesome>:nth-child(1), .awesome>:nth-child(2){
+        font-size: 19px;
+
+    }
+    .awesome{
+        margin: 0;
     }
 }
