@@ -1,24 +1,24 @@
-import React from "react"
-import "./intro.css"
-import Github from "../../img/github.png"
-import Linkedin from "../../img/linkedin.png"
-import Instagram from "../../img/instagram.png"
-import vector1 from "../../img/Vector1.png"
-import vector2 from "../../img/Vector2.png"
-import boy from "../../img/me.jpg"
-import thumbup from "../../img/thumbup.png"
-import crown from "../../img/crown.png"
-import glassesimoji from "../../img/glassesimoji.png"
-import FloatingDiv from "../foatingDiv/floatingDiv"
-import { themeContext } from "../../Context"
-import { useContext } from "react"
-import { motion } from "framer-motion"
-import { Link } from "react-scroll"
+import React from "react";
+import "./intro.css";
+import Github from "../../img/github.png";
+import Linkedin from "../../img/linkedin.png";
+import Instagram from "../../img/instagram.png";
+import vector1 from "../../img/Vector1.png";
+import vector2 from "../../img/Vector2.png";
+import boy from "../../img/me.jpg";
+import thumbup from "../../img/thumbup.png";
+import crown from "../../img/crown.png";
+import glassesimoji from "../../img/glassesimoji.png";
+import FloatingDiv from "../foatingDiv/floatingDiv";
+import { themeContext } from "../../Context";
+import { useContext } from "react";
+import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 function Intro() {
-  const theme = useContext(themeContext)
-  const darkMode = theme.state.darkMode
-  const transition = { duration: 2, type: "spring" }
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
+  const transition = { duration: 2, type: "spring" };
 
   return (
     <div className="intro">
@@ -29,8 +29,9 @@ function Intro() {
           </span>
           <span>Valeria Muhembele</span>
           <span style={darkMode ? { color: "white" } : { color: "black" }}>
-            Backend Developer with intermediate experience in node js producing
-            quality work. I also do frontend development with react js.
+            Backend Developer with intermediate experience in node js and Golang
+            producing quality work. I also do frontend development with react
+            js, HTMLand css.
           </span>
         </div>
         <button className="button ibutton">
@@ -39,11 +40,13 @@ function Intro() {
           </Link>
         </button>
         <div className="iicons">
-          <img
-            src={Github}
-            alt="Github"
-            style={darkMode ? { color: "white" } : { color: "black" }}
-          />
+          <a href="https://github.com/anamivale">
+            <img
+              src={Github}
+              alt="Github"
+              style={darkMode ? { color: "white" } : { color: "black" }}
+            />
+          </a>
           <a href="https://www.linkedin.com/in/valeria-muhembele-83726222a">
             <img src={Linkedin} alt="Linkedin" />
           </a>{" "}
@@ -75,7 +78,7 @@ function Intro() {
           transition={transition}
           style={{ top: "18rem", left: "0rem" }}
         >
-          <FloatingDiv image={thumbup} txt1="Best Design" txt2="Award" />
+          <FloatingDiv image={thumbup} txt1="Best Math" txt2="Teacher" />
         </motion.div>
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
@@ -90,7 +93,7 @@ function Intro() {
         ></div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Intro
+export default Intro;
